@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Yummies(About Page)</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<!--LOGO--><img src="Pictures/logo.png"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarResponsive"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="team.html">Team</a>
+						</li>
+						<li id="logoutDiv" class="nav-item">
+							<a class="nav-link" href="login.html">
+								<button id="logoutButton" class="btn btn-secondary">
+									Logout
+								</button></a
+							>
+						</li>
+						<li id="loginDiv" class="nav-item">
+							<a class="nav-link" href="login.html">
+								<button id="loginWhileLoggedOut" class="btn btn-secondary">
+									Login
+								</button></a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<h1 class="display-2"></h1>Yummies mission is to allow unique foods from various locations to shine. Yummies provides accessibility to ratings of popular cuisines from many areas.</h1>
+
+	</body>
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyCIRfdq3fY4ny_Cb2cGaH4Ze3rr9FhbFjI",
+			authDomain: "yummies-9a5e6.firebaseapp.com",
+			databaseURL: "https://yummies-9a5e6.firebaseio.com",
+			projectId: "yummies-9a5e6",
+			storageBucket: "yummies-9a5e6.appspot.com",
+			messagingSenderId: "766610613833",
+			appId: "1:766610613833:web:76e2d130e52c0d66",
+		};
+		// Initialize Firebase
+	</script>
+</body>
+
+<script>
+	firebase.initializeApp(firebaseConfig);
+</script>
+<script src="login.js"></script>
+<script src="logout.js"></script>
+<script src="dynamicCss.js"></script>
+</html>

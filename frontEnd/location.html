@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Location Selector</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+		<link href="style.css" rel="stylesheet" />
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+	</head>
+
+	<body>
+      <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <!--LOGO--><img src="Pictures/logo.png"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html">Team</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+					<div class="container-fluid padding">
+						<div class="row welcome text-center">
+							<div class="col-12">
+								<h1 class="display-4">Here You Are!</h1>
+							</div>
+							<hr />
+							<div class="col-12">
+								<p class="lead">
+									Click on a state to see the must have foods that they
+									are known for!
+								</p>
+              </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-inner">
+			<img
+				src="https://i.imgur.com/LBKaEnv.png"
+				alt="usmap"
+				usemap="#usmap"
+			/>
+
+			<map name="usmap">
+				<area
+					shape="rect"
+					coords="834,474,891,565"
+					alt="Alabama"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-alabama"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="152,641,50"
+					alt="Alaska"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-alaska"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="261,477,42"
+					alt="Arizona"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-in-arizona"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="719,482,37"
+					alt="Arkansas"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-in-arkansas"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="60,346,132,388"
+					alt="California"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-in-california"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="373,305,455,385"
+					alt="Colorado"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-colorado"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="1130,226,11"
+					alt="Connecticut"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-connecticut"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="1136,299,1163,317"
+					alt="Delaware"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-delaware"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="1012,640,26"
+					alt="Florida"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-florida"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="911,510,978,542"
+					alt="Georgia"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-georgia"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="296,659,503,768"
+					alt="Hawaii"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-hawaii"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="220,167,289,226"
+					alt="Idaho"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-idaho"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="785,329,28"
+					alt="Illinois"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-illinois"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="829,295,870,346"
+					alt="Indiana"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-indiana"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="688,269,36"
+					alt="Iowa"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-iowa"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="515,339,676,428"
+					alt="Kansas"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-kansas"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="891,385,26"
+					alt="Kentucky"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-kentucky"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="698,544,744,613"
+					alt="Louisiana"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-in-louisiana"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="1173,103,34"
+					alt="Maine"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-maine"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="1072,312,19"
+					alt="Maryland"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-in-maryland"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="1141,200,13"
+					alt="Massachusetts"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-in-massachusetts"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="874,230,26"
+					alt="Michigan"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-michigan"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="634,129,697,188"
+					alt="Minnesota"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-in-minnesota"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="774,502,820,575"
+					alt="Mississippi"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-mississippi"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="710,377,34"
+					alt="Missouri"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-missouri"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="289,63,453,159"
+					alt="Montana"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-montana"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="564,290,33"
+					alt="Nebraska"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-nebraska"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="181,306,40"
+					alt="Nevada"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-nevada"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="1133,158,1154,179"
+					alt="New Hampshire"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-new-hampshire"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="1111,277,10"
+					alt="New Jersey"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-new-jersey"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="349,479,114"
+					alt="New Mexico"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-new-mexico"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="1076,195,29"
+					alt="New York"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-new-york"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="982,407,1078,437"
+					alt="North Carolina"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-north-carolina"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="494,76,609,154"
+					alt="North Dakota"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-north-dakota"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="924,307,30"
+					alt="Ohio"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-ohio"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="609,460,54"
+					alt="Oklahoma"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-oklahoma"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="127,155,60"
+					alt="Origon"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-oregon"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="981,257,1079,283"
+					alt="Pennsylvania"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-pennsylvania"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="1157,217,5"
+					alt="Rhode Island"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-in-rhode-island"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="998,477,28"
+					alt="South Carolina"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-south-carolina"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="485,164,616,240"
+					alt="South Dakota"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-south-dakota"
+					target="_blank"
+				/>
+				<area
+					shape="rect"
+					coords="798,431,909,454"
+					alt="Tennesse"
+					href="https://www.foodnetwork.com/restaurants/packages/b¸¸¸¸¸¸¸¸¸ßßest-food-in-america/photos/what-to-eat-tennessee"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="556,574,86"
+					alt="Texas"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-in-texas"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="293,332,35"
+					alt="Utah"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-utah"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="1116,155,11"
+					alt="Vermont"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-vermont"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="1037,366,31"
+					alt="Virgina"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-in-virginia"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="166,61,41"
+					alt="Washington"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-washington"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="975,351,22"
+					alt="West Virgina"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-west-virginia"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="776,195,22"
+					alt="Wisconsion"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-wisconsin"
+					target="_blank"
+				/>
+				<area
+					shape="circle"
+					coords="390,228,63"
+					alt="Wyoming"
+					href="https://www.foodnetwork.com/restaurants/packages/best-food-in-america/photos/what-to-eat-wyoming"
+					target="_blank"
+				/>
+			</map>
+		</div>
+	</body>
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyCIRfdq3fY4ny_Cb2cGaH4Ze3rr9FhbFjI",
+			authDomain: "yummies-9a5e6.firebaseapp.com",
+			databaseURL: "https://yummies-9a5e6.firebaseio.com",
+			projectId: "yummies-9a5e6",
+			storageBucket: "yummies-9a5e6.appspot.com",
+			messagingSenderId: "766610613833",
+			appId: "1:766610613833:web:76e2d130e52c0d66",
+		};
+		// Initialize Firebase
+	</script>
+</body>
+
+<script>
+	firebase.initializeApp(firebaseConfig);
+</script>
+<script src="login.js"></script>
+<script src="logout.js"></script>
+<script src="dynamicCss.js"></script>
+</html>

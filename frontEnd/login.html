@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Yummies(Login Page)</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<link href="style.css" rel="stylesheet" />
+		<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+
+	</head>
+	<body>
+	<script src="login.js"></script>
+		<div class="hero-image">
+			<div class="hero-text">
+				<h1 class="topText">Yummies...</h1>
+				<h3>Login or continue as a guest</h3>
+				<div class="loginHolder">
+					<div
+						class="input-group col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"
+					>
+						<span class="input-group-addon"
+							><i class="glyphicon glyphicon-user"></i
+						></span>
+						<input
+							id="userEmail"
+							type="email"
+							class="form-control"
+							name="username"
+							placeholder="Username"
+						/>
+					</div>
+					<div
+						class="input-group col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"
+					>
+						<span class="input-group-addon"
+							><i class="glyphicon glyphicon-lock"></i
+						></span>
+						<input
+							id="userPassword"
+							type="password"
+							class="form-control"
+							name="password"
+							placeholder="Password"
+						/>
+					</div>
+					<div class="loginButton">
+						<button id="loginButton1" type="submit" class="btn btn-primary" onclick="">Login</button>
+						<a href="index.html"><button class=" btn btn-primary">Continue as Guest</button></a>
+					</div>
+
+					<div class="signUp  col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+						<!--Add hovering css to the two links below-->
+						<p><a id="signUpLink" href="#">Forgot Password</a></p>
+            <p>Don't have an account? Sign up <a id="signUpLink" href="signUp.html">here!</a></p>
+            <div class="row text center padding">
+                <div class="col 12">
+                  <p>Or log in through the following:</p>
+                </div>
+                <div class="loginSocial padding">
+									<a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+              </div>
+          </div>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+		<script>
+				// Your web app's Firebase configuration
+				var firebaseConfig = {
+					apiKey: "AIzaSyCIRfdq3fY4ny_Cb2cGaH4Ze3rr9FhbFjI",
+					authDomain: "yummies-9a5e6.firebaseapp.com",
+					databaseURL: "https://yummies-9a5e6.firebaseio.com",
+					projectId: "yummies-9a5e6",
+					storageBucket: "yummies-9a5e6.appspot.com",
+					messagingSenderId: "766610613833",
+					appId: "1:766610613833:web:76e2d130e52c0d66"
+				};
+				// Initialize Firebase
+				firebase.initializeApp(firebaseConfig);
+			</script>
+	</body>
+</html>

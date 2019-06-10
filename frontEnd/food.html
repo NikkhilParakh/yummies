@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Yummies(Food)</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<link href="style.css" rel="stylesheet" />
+		<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+		<script src="food.js"></script>
+		<script>
+			$( document ).ready(getFood())
+		</script>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<!--LOGO--><img src="Pictures/logo.png"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarResponsive"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="team.html">Team</a>
+						</li>
+						<li id="logoutDiv" class="nav-item">
+								<a class="nav-link" href="login.html">
+									<button id="logoutButton" class="btn btn-secondary">
+										Logout
+									</button></a
+								>
+							</li>
+							<li id="loginDiv" class="nav-item">
+								<a class="nav-link" href="login.html">
+									<button id="loginWhileLoggedOut" class="btn btn-secondary">
+										Login
+									</button></a
+								>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
+		<!--- Image -->
+		<div class="food-image">
+			<img id="foodImage" src="Pictures/background1.jpg" />
+		</div>
+		<div class="foodAction_container">
+			<br />
+			<button id="like" type="button" class="btn btn-primary btn-md" onclick="upVote()" >LIKE</button>
+			<button id="dislike" type="button" class="btn btn-primary btn-md" onclick = "downVote()">DISLIKE</button> 
+			<button id="save" type="button" class="btn btn-primary btn-md">SAVE</button> 
+			<br /><br />
+			<span  id=likesDisplay rows="1" cols="35">Likes:</span>
+			<br /><br />
+			<h1 id="foodName">Food Name</h1>
+			<br />
+			<p id="foodCaption">Info about food</p>
+			<br />
+			<div>
+					Go back to
+					<a href="map.html"><button class="btn btn-primary">Map</button></a>
+				</div>
+				<br />
+		</div>
+		</div>
+				<script>
+						// Your web app's Firebase configuration
+						var firebaseConfig = {
+							apiKey: "AIzaSyCIRfdq3fY4ny_Cb2cGaH4Ze3rr9FhbFjI",
+							authDomain: "yummies-9a5e6.firebaseapp.com",
+							databaseURL: "https://yummies-9a5e6.firebaseio.com",
+							projectId: "yummies-9a5e6",
+							storageBucket: "yummies-9a5e6.appspot.com",
+							messagingSenderId: "766610613833",
+							appId: "1:766610613833:web:76e2d130e52c0d66",
+						};
+					</script>
+					<script src="dynamicCss.js"></script>
+			</body>
+		</html>
+	</body>
+
+</html>

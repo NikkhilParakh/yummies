@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: "Poppins", sans-seriff;
+	color: #222;
+}
+/*---------------------------------------LOGIN PAGE---------------------------------------------------*/
+.hero-image {
+	background-image: url(Pictures/bread-color-copyspace-1565982.jpg);
+	background-color: #cccccc;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-text {
+	text-align: center;
+	padding-top: 1rem;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.hero-text h3 {
+	text-shadow: 1px 1px 20px #000;
+	font-size: 25px;
+}
+.topText {
+	align-content: center;
+	font-size: 20vw;
+	font-family: "Brush Script MT", cursive;
+	text-shadow: 1px 1px 15px #000;
+	padding-left: 5rem;
+	padding-top: 23rem;
+	opacity: 0.8;
+	color: #ffffff;
+}
+.input-group {
+	width: 300px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.form-control {
+	max-width: 300px;
+	min-width: 250px;
+}
+.signUp {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.signUp p {
+	font-size: 20px;
+	text-shadow: 1px 1px 20px #000;
+}
+
+#signUpLink {
+	color: rgb(255, 255, 255);
+	text-decoration: underline;
+}
+
+.hide {
+	display: none;
+}
+/* .show {
+	display: inline-block;
+} */
+
+/* #signUpLink a.ex1:hover,
+a.ex1:active {
+	color: red;
+} */
+.loginSocial a {
+	font-size: 60px;
+	padding: 2rem;
+}
+
+/* --------------------------Sign Up Page ------------------------------------*/
+
+.signUpHolder {
+	left: 50%;
+	bottom: 50%;
+}
+
+#signUpHolder.label p {
+	font-size: 20px;
+}
+.signUpTopText {
+	align-content: center;
+	font-size: 20vw;
+	font-family: "Brush Script MT", cursive;
+	text-shadow: 1px 1px 15px #000;
+	padding-left: 5rem;
+	padding-top: 25rem;
+	opacity: 0.8;
+	color: #ffffff;
+}
+
+#signUpText {
+	font-size: 10rem;
+}
+
+#userFirstName {
+	left: 50%;
+}
+
+.signUpSection {
+	padding-top: 1em;
+	position: relative;
+}
+.signUpSection label {
+	font-size: 1.3em;
+}
+
+.termsAndConditions {
+	padding-top: 1em;
+	font-size: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.termsAndConditions a {
+	color: #95cdf3;
+}
+.loginPage {
+	left: 50%;
+	transform: translateX(-50%);
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 2rem;
+}
+.loginPage a {
+	color: #95cdf3;
+}
+
+/*---------------------------------FOOD PAGE-----------------------------*/
+.food-image img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 55%;
+}
+.foodAction_container {
+	width: 55%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	background: #3f3f3f;
+	color: #ffffff;
+	position: relative;
+}
+/* -------------------------------Team page-----------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.team-section {
+	overflow: hidden;
+	text-align: center;
+	background: #3f3f3f;
+}
+.team-section {
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: white;
+	font-size: 40px;
+}
+.border {
+	display: block;
+	margin-bottom: auto;
+	width: 160px;
+	height: 3px;
+	background: white;
+	margin-bottom: 40px;
+}
+.pics {
+	margin-bottom: 40px;
+}
+.pics a {
+	display: inline-block;
+	margin: 0 30px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.pics a img {
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.4s all;
+}
+.pics a:hover > img {
+	filter: none;
+}
+.section {
+	width: 600px;
+	margin: auto;
+	font-size: 20px;
+	color: #3f3f3f;
+	text-align: justify;
+	height: 0;
+	overflow: hidden;
+}
+.section:target {
+	height: auto;
+}
+.name {
+	display: block;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+/*--------------------------Location/Map page------------------------------*/
+#us-map {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#mapHead {
+	background-image: url(Pictures/trending.jpg);
+	background-color: #cccccc;
+	height: 85%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.mapTopText {
+	align-content: center;
+	font-size: 5vw;
+	font-family: "Brush Script MT", cursive;
+	text-shadow: 1px 1px 15px #000;
+	padding-left: 5rem;
+	padding-top: 25rem;
+	opacity: 0.8;
+	color: #ffffff;
+}
+#map {
+	width: 60vw;
+
+	padding-top: 50%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.map {
+	left: 50%;
+	transform: translateX(-50%);
+}
+#us-map path:hover,
+#us-map circle:hover {
+	stroke: #3cb371 !important;
+	stroke-width: 2px;
+	stroke-linejoin: round;
+	fill: #3cb371 !important;
+	cursor: pointer;
+}
+#path67 {
+	fill: none !important;
+	stroke: #a9a9a9 !important;
+	cursor: default;
+}
+#info-box {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background-color: #ffffff;
+	border: 2px solid #bf0a30;
+	border-radius: 5px;
+	padding: 5px;
+	font-family: arial;
+}
+/*-----------------------------Trending PAGE------------------------------------*/
+#trendingHead {
+	font-family: "fantasy", cursive;
+	font-size: 40px;
+	color: #fff;
+}
+
+#trendingHead {
+	background-image: url(Pictures/trending.jpg);
+	background-color: #cccccc;
+	height: 200%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+#trendingContent {
+	left: 5px;
+	right: 5px;
+	position: absolute;
+}
+.trendingTopText {
+	align-content: center;
+	font-size: 5vw;
+	font-family: "Brush Script MT", cursive;
+	text-shadow: 1px 1px 15px #000;
+	padding-left: 5rem;
+	padding-top: 25rem;
+	opacity: 0.8;
+	color: #ffffff;
+}
+/*-----------------------------MAIN PAGE------------------------------------*/
+.navbar {
+	padding: 0.8rem;
+}
+
+.navbar-nav li {
+	padding-right: 20px;
+}
+
+.nav-link {
+	font-size: 1.1em !important;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-caption {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel-caption h1 {
+	font-size: 500%;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 15px #000;
+	padding-bottom: 1rem;
+}
+.carousel-caption h3 {
+	font-size: 200%;
+	font-weight: 500;
+	text-shadow: 1px 1px 10px #000;
+	padding-bottom: 10rem;
+}
+
+.btn-primary {
+	background-color: #6648b1;
+	border: 1px solid #563d7c;
+}
+.btn-primary:hover {
+	background-color: #563d7c;
+	border: 1px solid #563d7c;
+}
+
+.jumbotron {
+	padding: 1rem;
+	border-radius: 0;
+}
+
+.padding {
+	padding-bottom: 2rem;
+}
+.welcome {
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+.welcome hr {
+	border-top: 2px solid #b4b4b4;
+	width: 95%;
+	margin-top: 0.3rem;
+	margin-bottom: 1rem;
+}
+.fa-code {
+	color: #e54d26;
+}
+
+.fa-bold {
+	color: #563d7c;
+}
+
+.fa-css3 {
+	color: #2163af;
+}
+.fa-code,
+.fa-bold,
+.fa-css3 {
+	font-size: 4em;
+	margin: 1rem;
+}
+.social a {
+	font-size: 4.5em;
+	padding: 3rem;
+}
+
+.fa-facebook {
+	color: #3b5998;
+}
+
+.fa-twitter {
+	color: #00aced;
+}
+.fa-pinterest {
+	color: #dd4b39;
+}
+.fa-instagram {
+	color: #517fa4;
+}
+.fa-youtube {
+	color: #bb0000;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-pinterest:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+	color: #d5d5d5;
+}
+
+footer {
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	padding-top: 2rem;
+}
+
+hr.light {
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+	margin-top: 0.8rem;
+	margin-bottom: 1rem;
+}
+
+footer a {
+	color: #d5d5d5;
+}
+
+hr.light-100 {
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+	margin-top: 0.8rem;
+	margin-bottom: 1rem;
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
+	.social a {
+		font-size: 4em;
+		padding: 2em;
+	}
+	/* .top-text h1 {
+		font-size: 8em;
+	} */
+}
+@media (max-width: 768px) {
+	.carousel-caption {
+		top: 45%;
+	}
+	.carousel-caption h1 {
+		font-size: 350%;
+	}
+	.carousel-caption h3 {
+		font-size: 140%;
+		font-weight: 500;
+		padding-bottom: 0.2rem;
+	}
+	.carousel-caption .btn {
+		font-size: 95%;
+		padding: 8px 14px;
+	}
+	.display-4 {
+		font-size: 100%;
+	}
+	.social a {
+		font-size: 2.5em;
+		padding: 1.2em;
+	}
+	.signUpTopText {
+		padding-top: 15rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.carousel-caption {
+		top: 40%;
+	}
+	.carousel-caption h1 {
+		font-size: 250%;
+	}
+	.carousel-caption h3 {
+		font-size: 110%;
+	}
+	.carousel-caption .btn {
+		font-size: 90%;
+		padding: 4px 8px;
+	}
+	.display-4 {
+		font-size: 160%;
+	}
+	.social a {
+		font-size: 2em;
+		padding: 0.7em;
+	}
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+	position: relative;
+	width: 100%;
+	height: 60%;
+	margin: 0 !important;
+}
+.fixed-wrap {
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#fixed {
+	background-image: url("img/mac.png");
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+	padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
