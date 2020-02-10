@@ -1,6 +1,6 @@
 # yummies
 
-CI102-103 Project
+CI 103 Project
 
 This project was designed as a part of my CI103 (Computing and Informatics Design) class. For this project, I worked in a group of three. I was the product manager and the Frontend developer.
 
